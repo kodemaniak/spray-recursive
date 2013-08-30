@@ -14,7 +14,6 @@ import spray.httpx.SprayJsonSupport._
 import spray.testkit.ScalatestRouteTest
 
 class TreesResourceTest extends WordSpec with ShouldMatchers with ScalatestRouteTest with TreesResource {
-  override def testConfig = ConfigFactory.load("test")
   def actorRefFactory = system
 
   "The trees resource" should {
